@@ -13,7 +13,8 @@ exports.handler = skillBuilder
     coreHandlers.ExitRequestHandler,
     coreHandlers.FallbackRequestHandler,
     coreHandlers.SessionEndedRequestHandler,
-    customHandlers.HelloWorldIntentHandler
+    customHandlers.quizHandler,
+    customHandlers.answerHandler
   )
   .addErrorHandlers(errorHandlers.ErrorHandler)
   .lambda();

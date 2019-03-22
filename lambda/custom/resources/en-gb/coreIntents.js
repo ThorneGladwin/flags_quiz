@@ -1,24 +1,24 @@
 const CoreIntents = {
   LaunchRequest: {
-    OutputSpeech: "Welcome to the Alexa Skill Template test skill. This is your welcoming speech.",
-    RepromptSpeech: "This is your reprompt speech for your launch request."
+    OutputSpeech: `Welcome to the flags quiz. I will give you a description of a flag from around the world and all you have to do is guess the country it belongs to. If you would like the full description of how to play, just say "Help". To get started, say "Lets play flags!".`,
+    RepromptSpeech: `If you would like the full description of how to play, just say "Help". To get started, say "Lets play flags!"`
   },
   HelpRequest: {
-    OutputSpeech: "This is your help speech.",
-    RepromptSpeech: "This is your reprompt for your help speech."
+    OutputSpeech: `For each question, I will describe a flag that belongs to a country of the world. You will then need to guess what country it belongs to. Once you have answered all of the questions, you will get your total score. To get started, say "Lets play flags!".`,
+    RepromptSpeech: `For each question, I will describe a flag that belongs to a country of the world. You will then need to guess what country it belongs to. Once you have answered all of the questions, you will get your total score. To get started, say "Lets play flags!".`,
   },
   ExitRequest: {
-    OutputSpeech: "This is your exit speech."
+    OutputSpeech: "I hope you enjoyed the flag quiz. Don't forget to leave a review. Goodbye!"
   },
   SessionEndedRequest: {
-    OutputSpeech: "This is your session ended speech."
+    OutputSpeech: `I haven't heard a response from you. If you would like to play again later, just say Alexa, play flags quiz". Goodbye!`
   },
   FallbackHandlerRequest: {
-    OutputSpeech: "This is your fallback speech",
-    RepromptSpeech: "This is your reprompt for your fallback speech."
+    OutputSpeech: "Sorry I didn't catch that, why don't you try saying that again?",
+    RepromptSpeech: "Sorry I didn't catch that, why don't you try saying that again?"
   },
   ErrorHandlerRequest: {
-    OutputSpeech: "This is your error handler speech."
+    OutputSpeech: "Oops. Something went wrong. Hopefully, I'll have this fixed soon. Goodbye!"
   }
 };
 

@@ -1,9 +1,11 @@
 const { CoreIntents } = require("./coreIntents");
-const { HelloWorldIntent } = require("./helloWorldIntent");
+const { QuizHandler } = require("./quizHandler");
+const { AnswerHandler } = require("./answerHandler");
 
 const speech = {
     CoreIntents,
-    HelloWorldIntent
+    QuizHandler,
+    AnswerHandler
 };
 
 module.exports = {

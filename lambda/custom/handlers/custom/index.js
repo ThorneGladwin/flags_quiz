@@ -1,5 +1,7 @@
-const HelloWorldIntentHandler = require("./helloWorldIntentHandler");
+const quizHandler = require("./quizHandler");
+const answerHandler = require("./answerHandler");
 
 module.exports = {
-  HelloWorldIntentHandler
+  quizHandler,
+  answerHandler
 };

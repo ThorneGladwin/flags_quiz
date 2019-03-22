@@ -14,10 +14,10 @@ set -o pipefail
 [ -f .env ] && source .env
 
 #enable mfa (required for assume role)
-if [[ -z $MFA_SERIAL ]]; then
-    echo "\$MFA_SERIAL is empty, please set it as an environment variable"
+if [[ -z $MFA_SERIAL2 ]]; then
+    echo "\$MFA_SERIAL2 is empty, please set it as an environment variable"
 fi
-echo "MFA_SERIAL: $MFA_SERIAL"
+echo "MFA_SERIAL2: $MFA_SERIAL2"
 
 # read -p "Enter Your MFA token here: " MFA_TOKEN
 MFA_TOKEN=$1
@@ -27,11 +27,11 @@ then
     echo "Please Enter your MFA token"
 fi
 
-response=`aws sts get-session-token --serial-number $MFA_SERIAL --token-code $MFA_TOKEN`
+response=`aws sts get-session-token --serial-number $MFA_SERIAL2 --token-code $MFA_TOKEN`
 
 if [[ $? != 0 ]]; then
     echo $?
-    echo "MFA id: $MFA_SERIAL and MFA token: $MFA_TOKEN do not match up, or authentication to AWS failed. If not working, try to run a fresh console."
+    echo "MFA id: $MFA_SERIAL2 and MFA token: $MFA_TOKEN do not match up, or authentication to AWS failed. If not working, try to run a fresh console."
 fi
 
 export AWS_ACCESS_KEY_ID=$(echo "$response" | grep AccessKeyId | awk '{ print $2 }' | sed s/\"//g | sed s/,//g)

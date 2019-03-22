@@ -1,40 +1,82 @@
 {
   "interactionModel": {
-    "languageModel": {
-      "invocationName": "flags quiz",
-      "intents": [
-        {
-          "name": "AMAZON.FallbackIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.CancelIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.HelpIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.StopIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.NavigateHomeIntent",
-          "samples": []
-        },
-        {
-          "name": "HelloWorldIntent",
-          "slots": [],
-          "samples": [
-            "hi world",
-            "hello world",
-            "hi",
-            "hello"
-          ]
-        }
-      ],
-      "types": []
-    }
+      "languageModel": {
+          "invocationName": "flags quiz",
+          "intents": [
+              {
+                  "name": "AMAZON.FallbackIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.StopIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.NavigateHomeIntent",
+                  "samples": []
+              },
+              {
+                  "name": "QuizIntent",
+                  "slots": [],
+                  "samples": [
+                      "play flag quiz",
+                      "play quiz",
+                      "play the flag quiz",
+                      "play the quiz",
+                      "let's play the flag quiz",
+                      "lets play the flag quiz",
+                      "start flag",
+                      "start flag quiz",
+                      "lets play flag quiz",
+                      "let's play flag quiz",
+                      "start quiz",
+                      "let's play flags",
+                      "lets play flags",
+                      "start a quiz"
+                  ]
+              },
+              {
+                  "name": "AnswerIntent",
+                  "slots": [
+                      {
+                          "name": "Country",
+                          "type": "AMAZON.Country"
+                      }
+                  ],
+                  "samples": [
+                      "I am guessing it is {Country}",
+                      "I am guessing {Country}",
+                      "Im guessing {Country}",
+                      "I'm guessing {Country}",
+                      "it is {Country}",
+                      "I pick {Country}",
+                      "{Country} is the answer",
+                      "my answer is {Country}",
+                      "I think its {Country}",
+                      "I think it's {Country}",
+                      "I think it is {Country}",
+                      "the answer is {Country}",
+                      "{Country}"
+                  ]
+              },
+              {
+                  "name": "AMAZON.StartOverIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.PauseIntent",
+                  "samples": []
+              }
+          ],
+          "types": []
+      }
   }
 }
