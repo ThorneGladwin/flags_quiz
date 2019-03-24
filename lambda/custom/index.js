@@ -10,6 +10,7 @@ exports.handler = skillBuilder
   .addRequestHandlers(
     coreHandlers.LaunchRequestHandler,
     coreHandlers.HelpRequestHandler,
+    coreHandlers.RepeatRequestHandler,
     coreHandlers.ExitRequestHandler,
     coreHandlers.FallbackRequestHandler,
     coreHandlers.SessionEndedRequestHandler,

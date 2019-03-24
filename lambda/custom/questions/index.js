@@ -10,7 +10,7 @@ questions = [
     { answer: "Austria", question: "Three equal horizontal bands of red, white and red." },
     { answer: "Azerbaijan", question: "Three equal horizontal bands of sky blue, red and green. There is a white vertical crescent moon and an eight-pointed star in the center." },
     { answer: "Bangladesh", question: "Green with a large red circle in the center." },
-    { answer: "Barbados", question: "three equal vertical bands of blue, gold and blue, with the head of a black trident centered on the gold band." },
+    { answer: "Barbados", question: "three equal vertical bands of blue, gold, and blue. With the head of a black trident centered on the gold band." },
     { answer: "Belarus", question: "red horizontal band and green horizontal band. A white vertical stripe on the left side bears a national ornamentation." },
     { answer: "Belgium", question: "three equal vertical bands of black, yellow, and red." },
     { answer: "Benin", question: "two equal horizontal bands of yellow and red with a vertical green band on the left side." },

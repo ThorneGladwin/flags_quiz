@@ -1,5 +1,5 @@
 {
-  "name": "alexa-skill-template",
+  "name": "flags-quiz",
   "version": "1.0.0",
   "description": "Basic template for building an Alexa skill with deployment and backup scripts.",
   "main": "lambda/custom/index.js",
